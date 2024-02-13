@@ -1,0 +1,12 @@
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\bin\Debug\net6.0-windows10.0.19041.0\Reversi.deps.json
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\bin\Debug\net6.0-windows10.0.19041.0\Reversi.dll
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\bin\Debug\net6.0-windows10.0.19041.0\Reversi.pdb
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\Reversi.csproj.AssemblyReference.cache
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\Reversi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\Reversi.AssemblyInfoInputs.cache
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\Reversi.AssemblyInfo.cs
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\Reversi.csproj.CoreCompileInputs.cache
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\Reversi.dll
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\refint\Reversi.dll
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\Reversi.pdb
+C:\Users\gabik\Desktop\Egyetem\EVA\MAUI\ReversiMAUI\Reversi\obj\Debug\net6.0-windows10.0.19041.0\ref\Reversi.dll

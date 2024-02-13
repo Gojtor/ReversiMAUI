@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReversiMAUI.MainPage">
+
+    <Grid Margin="4" RowSpacing="8" BackgroundColor="Grey">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Button Text="New Game" Command="{Binding NewGameCommand}" Grid.Row="0" HorizontalOptions="Start" />
+        <Button Text="Pause Menu" Command="{Binding PauseGameCommand}" Grid.Row="0" HorizontalOptions="End" />
+
+        <Grid Grid.Row="1" BindableLayout.ItemsSource="{Binding Buttons}" RowDefinitions="{Binding RowCount}" ColumnDefinitions="{Binding ColumnCount}" ColumnSpacing="4" RowSpacing="4">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Button Grid.Row="{Binding Y}" Grid.Column="{Binding X}" Command="{Binding PutPieceCommand}" CommandParameter="{Binding XY}"
+                            Padding="0" FontAttributes="Bold" FontSize="Medium" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#A35C41">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Style.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding Text}" Value="1">
+                                        <Setter Property="BackgroundColor" Value="Black">
+                                        </Setter>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Button" Binding="{Binding Text}" Value="-1">
+                                        <Setter Property="BackgroundColor" Value="White">
+                                        </Setter>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Button" Binding="{Binding Text}" Value="2">
+                                        <Setter Property="BackgroundColor" Value="Green">
+                                        </Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </Grid>
+
+        <HorizontalStackLayout HorizontalOptions="Start" Grid.Row="2">
+            <Label FontSize="20" FontAttributes="Bold" Text="Player1" TextColor="{Binding P1Background}" Margin="0,0,10,0"/>
+            <Label FontSize="20" Text="Pieces: " Margin="0,0,2,0"/>
+            <Label FontSize="20" Text="{Binding Player1Pieces}" Margin="0,0,10,0"/>
+            <Label FontSize="20" Text=" Time: " Margin="0,0,2,0"/>
+            <Label FontSize="20" Text="{Binding Player1Time}" Margin="0,0,10,0"/>
+            <Button Text="Pass" Command="{Binding PassCommand}" IsEnabled="{Binding P1PassEnabled}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="End" Grid.Row="2">
+            <Button Text="Pass" Command="{Binding PassCommand}" IsEnabled="{Binding P2PassEnabled}"/>
+            <Label FontSize="20" Text="Time: " Margin="10,0,2,0"/>
+            <Label FontSize="20" Text="{Binding Player2Time}"/>
+            <Label FontSize="20" Text="Pieces: " Margin="10,0,2,0"/>
+            <Label FontSize="20" Text="{Binding Player2Pieces}" />
+            <Label FontSize="20" FontAttributes="Bold" Text="Player2" TextColor="{Binding P2Background}" Margin="10,0,0,0" />
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>
